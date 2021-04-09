@@ -1,9 +1,11 @@
-from flask import Flask, request, jsonify,render_template
 import os
+
+from flask import Flask, request, jsonify, render_template
 from flask_cors import CORS, cross_origin
 
 import speechToText
 from imp_file.utils import decodeSound
+
 os.putenv('LANG', 'en_US.UTF-8')
 os.putenv('LC_ALL', 'en_US.UTF-8')
 

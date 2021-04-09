@@ -13,7 +13,7 @@ def speech2Text(file):
     try:
         textdata = r.recognize_google(audio)
         print("Text data: " + textdata)
-        textdata
+        return textdata
 
     except sr.UnknownValueError:
         print(" Audio Error")
